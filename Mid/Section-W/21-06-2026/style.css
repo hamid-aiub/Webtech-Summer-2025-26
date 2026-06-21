@@ -1,0 +1,59 @@
+h1 {
+  color: yellow;
+}
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 34px;
+}
+h6 {
+  font-style: italic;
+}
+
+#header6 {
+  font-size: 18px;
+  font-weight: lighter;
+  color: red;
+}
+
+h6.header6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* * {
+  font-weight: 900;
+} */
+
+input {
+  font-style: italic;
+}
+
+#parent {
+  position: relative;
+  left: 100px;
+}
+#child1 {
+  position: absolute;
+  z-index: 0;
+  left: 80px;
+}
+#child2 {
+  position: absolute;
+  z-index: 0;
+  bottom: 0px;
+}
+
+#parent2 {
+  position: relative;
+}
+
+#child3 {
+  position: absolute;
+  opacity: 100%;
+}
+#child4 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+}
