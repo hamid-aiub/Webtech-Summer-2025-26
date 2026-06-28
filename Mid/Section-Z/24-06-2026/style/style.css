@@ -53,5 +53,11 @@ h1 {
 #child4 {
   position: absolute;
   z-index: 2;
-  right: 230px;
+  right: 280px;
+}
+
+#image {
+  position: absolute;
+  left: -40px;
+  top: -12px;
 }
