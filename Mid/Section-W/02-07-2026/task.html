@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>Hello world</h1>");
+    </script>
+        <fieldset>
+      <legend>Student Information</legend>
+        <form onsubmit="return onSubmit()">
+             <table>
+        <tr>
+          <td>
+            Full Name (Text) </br>
+            <input type="text" id="name" placeholder="Enter your full name" />
+          </td>
+          <td>
+            Email Address </br>
+            <input type="email" id="email" placeholder="Enter your email address" />
+          </td>
+           <td>
+           </br>
+            <input type="submit" />
+          </td>
+        </tr>
+        <tr>
+            <td><p id="nameError" style="color:red"></p></td>
+            <td><p id="emailError"  style="color:red"></p></td>
+        </tr>
+      </table>
+        </form>
+     
+    </fieldset>
+  </body>
+</html>
