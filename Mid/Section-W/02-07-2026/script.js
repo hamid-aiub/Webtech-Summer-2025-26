@@ -1,7 +1,7 @@
 console.log("Connected");
 
 
-function onSubmit(){
+function onSubmitForm(){
     alert("Please click ok1 to close");
      alert("Please click ok2 to close");
     const name = document.getElementById("name").value;
