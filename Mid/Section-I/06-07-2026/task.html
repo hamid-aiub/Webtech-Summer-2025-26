@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <script src="script.js"></script>
+    <script>
+      console.log("Hello world");
+    </script>
+  </head>
+
+  <body>
+    <h1>Hi, Welcome to our website.</h1>
+    <script>
+      document.write("<h1>Please use and let us know the bugs</h1>");
+    </script>
+    <fieldset>
+      <legend>User Registration</legend>
+      <form onsubmit="return collectData();">
+        <table>
+          <tr>
+            <td>Username</td>
+            <td><input type="text" id="username" onkeyup="getUsername()" /></td>
+            <td><span id="usernameError" class="errorText"></span></td>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td><input type="text" id="name" onchange="getName()" /></td>
+            <td><span id="nameError" class="errorText"></span></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="text" id="email" /></td>
+            <td><span id="emailError" class="errorText"></span></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" id="password" /></td>
+            <td><span id="passwordError" class="errorText"></span></td>
+          </tr>
+          <tr>
+            <td>Confirm Password</td>
+            <td><input type="password" id="confirmPassword" /></td>
+            <td><span id="confirmPasswordError" class="errorText"></span></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" /></td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>
