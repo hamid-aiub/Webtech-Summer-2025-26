@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>Product Cart</legend>
+      <form onkeyup="return calculate();">
+        <table>
+          <tr>
+            <td><label for="productName">Product Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="productName"
+                name="productName"
+                value="Asus Vivobook S15"
+                readonly
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="productPrice">Product Price:</label></td>
+            <td>
+              <input
+                type="text"
+                id="productPrice"
+                name="productPrice"
+                value="50000"
+                readonly
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="productQuantity">Product Quantity:</label>
+            </td>
+            <td>
+              <input
+                type="number"
+                id="productQuantity"
+                name="productQuantity"
+                min="1"
+              />
+            </td>
+            <td><p id="quantityError"></p></td>
+          </tr>
+          <tr>
+            <td>
+              <label>Payable Amount</label>
+            </td>
+            <td>
+              <input type="text" id="payable" readonly />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button id="button" style="display: none">Add to cart</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>

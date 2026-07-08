@@ -17,6 +17,8 @@ arr.map((fruit) => {
   console.log(fruit);
 });
 
+arr2.find((user) => user.id === "101");
+
 arr2.map((user, index) => {
   console.log("Index: ", index);
   console.log("id: ", user.id);
