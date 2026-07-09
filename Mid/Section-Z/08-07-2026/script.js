@@ -22,9 +22,9 @@ function check() {
   return false;
 }
 
-// function clearForm() {
-//   console.log("from clear function");
-//   document.getElementById("quantity").value = 0;
-//   //   document.getElementById("payable").value = 0;
-//   return false;
-// }
+function clearForm() {
+  console.log("from clear function");
+  document.getElementById("quantity").value = 0;
+  document.getElementById("payable").value = 0;
+  return false;
+}

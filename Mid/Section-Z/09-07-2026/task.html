@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Event Registration</legend>
+      <form onsubmit="return registration();">
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name" /></td>
+            <td><p id="nameError"></p></td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td><input type="text" id="email" /></td>
+            <td><p id="emailError"></p></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button>Submit</button></td>
+          </tr>
+        </table>
+      </form>
+      <p>
+        Total Number of registration: <span id="totalRegistrations">0</span>
+      </p>
+    </fieldset>
+  </body>
+</html>
