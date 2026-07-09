@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script src="script2.js"></script>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Product Cart</legend>
+      <form onkeyup="return calculate();">
+        <table>
+          <tr>
+            <td>Product Name</td>
+            <td><input type="text" value="Macbook M5 Pro" readonly /></td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td><input type="number" value="269999" readonly id="price" /></td>
+          </tr>
+          <tr>
+            <td>Quantity</td>
+            <td><input type="number" id="quantity" /></td>
+            <td><p id="quantityError"></p></td>
+          </tr>
+          <tr>
+            <td>Payable Bill</td>
+            <td><input type="number" id="bill" readonly /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button
+                id="button"
+                style="display: none"
+                onclick="return checkBill();"
+              >
+                Add to cart
+              </button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>
