@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>Login</legend>
+      <form onsubmit="return login();">
+        <table>
+          <tr>
+            <td>Username</td>
+            <td><input type="text" id="username" /></td>
+            <td><p id="usernameError" style="color: red"></p></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" id="password" /></td>
+            <td><p id="passwordError" style="color: red"></p></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><p id="loginError" style="color: red"></p></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button>Login</button></td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>
