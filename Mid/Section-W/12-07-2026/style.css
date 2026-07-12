@@ -1,0 +1,28 @@
+.card {
+  border: 3px solid rgb(155, 154, 154);
+  max-width: 120px;
+  height: 170px;
+  position: relative;
+  border-radius: 10%;
+  box-shadow: 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+.title {
+  position: absolute;
+  top: 60px;
+}
+
+.price {
+  position: absolute;
+  top: 80px;
+}
+.quantity {
+  position: absolute;
+  top: 100px;
+}
+
+.add_to_cart {
+  margin-top: 70px;
+  margin-left: 15%;
+}
