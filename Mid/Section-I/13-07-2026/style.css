@@ -1,0 +1,33 @@
+#card{
+    position: relative;
+    border: 2px solid gray;
+    max-width: 160px;
+    height: 250px;
+    padding: 2px 2px 2px 2px;
+}
+img{
+    height: 100px;
+    width: 160px;
+    border-radius: 10px;
+}
+
+#title{
+position: absolute;
+}
+#desc{
+position: absolute;
+top:125px;
+}
+
+#price{
+position: absolute;
+top:150px;
+}
+#quantity{
+position: absolute;
+top:170px;
+}
+
+#button{
+    margin-top:110px;
+}
