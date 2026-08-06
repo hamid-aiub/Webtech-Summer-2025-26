@@ -2,8 +2,8 @@
 
 session_start();
 
-$username = $_POST["username"];
-$password = $_POST["password"];
+$username = $_GET["username"];
+$password = $_GET["password"];
 $hasUsernameError = true;
 $hasPasswordError = true;
 
@@ -26,11 +26,11 @@ if(!$password){
     $hasPasswordError = false;
 }
 
-if($hasUsernameError || $hasPasswordError){
-Header("Location: ../View/task.php");
-}else{
-Header("Location: ../View/dashboard.php");
-}
+// if($hasUsernameError || $hasPasswordError){
+// Header("Location: ../View/task.php");
+// }else{
+// Header("Location: ../View/dashboard.php");
+// }
 
 
 ?>

@@ -23,7 +23,7 @@ unset($_SESSION["username"]);
 
 <html>
     <body>
-        <form  action="../Controller/loginValidation.php" method="post">
+        <form  action="../Controller/loginValidation.php" method="get">
            <fieldset>
             <legend>Login</legend>
              <table>
