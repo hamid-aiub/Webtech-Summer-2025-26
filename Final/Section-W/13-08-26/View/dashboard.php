@@ -8,8 +8,8 @@ if (!$isLoggedIn) {
     Header("Location: login.php");
 }
 
-$isCookieSet = isset($_COOKIE["section"]);
-$cookieValue = $_COOKIE["section"] ?? "";
+$isCookieSet = isset($_COOKIE["food"]);
+$cookieValue = $_COOKIE["food"] ?? "";
 
 ?>
 
@@ -21,6 +21,22 @@ $cookieValue = $_COOKIE["section"] ?? "";
 
 <p>Cookie Set Status: <?php echo $isCookieSet; ?></p>
 <p>Cookie Value: <?php echo $cookieValue; ?></p>
+
+<?php
+
+if (!$isCookieSet) {
+    echo "<form action='../Controller/AddFavoriteFood.php' method='post'>
+    <input type='text' name='food' />
+    <button>Add Favorite Food</button>
+</form>";
+} else {
+    echo "<p>Hi, We know about your favorite food, $cookieValue</p>";
+}
+
+?>
+
+
+
 
 <a href="../Controller/addCookie.php">Click me to add cookie</a>
 
