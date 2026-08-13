@@ -25,9 +25,23 @@ $favFood = $_COOKIE["favoriteFood"] ?? "";
     <?php echo $isCookieSet ? "Yes" : "No"; ?>
 </p>
 
-<p>Favorite Food :
-    <?php echo $favFood; ?>
-</p>
+
+<?php
+if ($isCookieSet) {
+    echo "<p>Hi, We know your favorite Food, $favFood</p>";
+} else {
+    echo "<p>Hi, Please enter your favorite food.</p>";
+    echo "<form action='../Controller/setFavFood.php' method='post'>
+    <input type='text' name='food' />
+    <input type='submit' value='Submit' />
+</form>";
+}
+
+
+?>
+
+
+
 
 <a href="../Controller/addCookieController.php">Click To Add Cookie</a>
 <a href="../Controller/logout.php">Logout</a>
