@@ -1,5 +1,5 @@
 <?php
-
+include "../Model/DatabaseConnection.php";
 session_start();
 
 $username = $_POST["username"];
@@ -51,7 +51,19 @@ if ($hasUsernameError || $hasPasswordError) {
         ];
         file_put_contents($jsonfile, json_encode($users, JSON_PRETTY_PRINT));
     }
-    Header("Location: ../View/login.php");
+    // Database connection starts from here
+
+    $database = new DatabaseConnection();
+    $connection = $database->openConnection();
+    $result = $database->signup($connection, "users", $username, $password, $path);
+
+    if ($result) {
+        Header("Location: ../View/login.php");
+    } else {
+        // Header("Location: ../View/r.php");
+        echo "Failed to registration";
+    }
+
 }
 
 
