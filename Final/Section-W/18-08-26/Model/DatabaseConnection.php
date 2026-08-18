@@ -1,0 +1,34 @@
+<?php
+class DatabaseConnection
+{
+
+    function openConnection()
+    {
+        $db_host = "localhost";
+        $db_user = "root";
+        $db_password = "123456"; // "" for all of you
+        $db_name = "section_w";
+        $connection = new mysqli($db_host, $db_user, $db_password, $db_name);
+        if ($connection->connect_error) {
+            die("Can not connect to the database, please try again. " . $connection->connect_error);
+        }
+        return $connection;
+    }
+
+    function signup($connection, $tableName, $username, $password, $file_path)
+    {
+        // $sql = "INSERT INTO $tableName (username, password, file_path) VALUES($username, $password, $file_path)";
+        $sql = "INSERT INTO $tableName (username, password, file_path) VALUES('" . $username . "', '" . $password . "', '" . $file_path . "')";
+        $result = $connection->query($sql);
+        return $result;
+    }
+
+    function signin($connection, $tableName, $username, $password, )
+    {
+        $sql = "SELECT * FROM $tableName WHERE username='" . $username . "' AND password ='" . $password . "'";
+        $result = $connection->query($sql);
+        return $result;
+    }
+}
+
+?>
